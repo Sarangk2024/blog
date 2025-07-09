@@ -1,0 +1,11 @@
+<%- include('partials/header') %>
+
+<h1>Create New Post</h1>
+
+<form action="/new" method="POST">
+  <input name="title" placeholder="Title" required />
+  <textarea name="content" placeholder="Content" rows="5" required></textarea>
+  <input type="submit" value="Post" />
+</form>
+
+<%- include('partials/footer') %>
