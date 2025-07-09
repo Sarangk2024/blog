@@ -1,0 +1,125 @@
+/* Base Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Flex Layout for Sticky Footer */
+  html, body {
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  main {
+    flex: 1;
+    padding: 2rem;
+    max-width: 900px;
+    margin: auto;
+  }
+  
+  /* Navigation Bar */
+  header nav {
+    background: #1f1f1f;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  header nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+  }
+  
+  header nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Button Style Like Screenshot */
+  .button,
+  input[type="submit"],
+  form button {
+    background-color: #0b66ff;
+    color: white;
+    padding: 12px 28px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+    text-decoration: none;
+  }
+  
+  .button:hover,
+  input[type="submit"]:hover,
+  form button:hover {
+    background-color: #004fcc;
+    transform: scale(1.03);
+  }
+  
+  /* Forms */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  form input[type="text"],
+  form textarea {
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    resize: vertical;
+  }
+  
+  /* Post Cards */
+  .post {
+    background: white;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  }
+  
+  .post h2 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .post p {
+    margin-bottom: 1rem;
+  }
+  
+  .post a,
+  .post form button {
+    margin-right: 1rem;
+    background: none;
+    color: #0b66ff;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  .post a:hover,
+  .post form button:hover {
+    text-decoration: underline;
+  }
+  
+  /* Footer */
+  footer {
+    background: #1f1f1f;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+    font-size: 0.95rem;
+  }
+  
